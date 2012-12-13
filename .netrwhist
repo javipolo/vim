@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/javipolo/work/vagrant/dev.rentamosya.com.mx/puppet_manifests'
+let g:netrw_dirhist_2='/home/javipolo/caca'
+let g:netrw_dirhist_3='/home/javipolo/work/image-generator.rentamos'
