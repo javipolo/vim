@@ -1,0 +1,2 @@
+git clone git://github.com/javipolo/vim.git .vim
+ln -s .vim/vimrc .vimrc
