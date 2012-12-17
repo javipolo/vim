@@ -1,3 +1,6 @@
+" enable pathogen (autoloading of bundles)
+call pathogen#infect()
+
 if has("syntax")
   syntax on
 endif
