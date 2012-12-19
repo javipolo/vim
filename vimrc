@@ -32,3 +32,16 @@ inoremap <F10> <C-o>::set list!<CR>
 cnoremap <F10> <C-c>::set list!<CR>
 
 set pastetoggle=<F12>
+
+" Returns true if paste mode is enabled
+function! HasPaste()
+    if &paste
+        return 'PASTE MODE  '
+    en
+    return ''
+endfunction
+
+" Always show the status line
+set laststatus=2
+" statusline (with git support from Fugitive.vim)
+set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ %{fugitive#statusline()}\ Line:\ %l
