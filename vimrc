@@ -19,6 +19,13 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
+" Faster scroll throug windows
+map <C-t> <C-w>w
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 " remap for list, normal, insert and command line mode
 nnoremap <F10> :set list!<CR>
 inoremap <F10> <C-o>::set list!<CR>
