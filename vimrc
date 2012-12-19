@@ -45,3 +45,10 @@ endfunction
 set laststatus=2
 " statusline (with git support from Fugitive.vim)
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ %{fugitive#statusline()}\ Line:\ %l
+
+" keymappings for tabularize
+let mapleader=','
+nmap <Leader>a= :Tabularize /=<CR>
+vmap <Leader>a= :Tabularize /=<CR>
+nmap <Leader>a) :Tabularize /=><CR>
+vmap <Leader>a) :Tabularize /=><CR>
