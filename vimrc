@@ -27,8 +27,8 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 map <C-o> <C-w><
 map <C-i> <C-w>>
-map <C-y> <C-w>+
-map <C-u> <C-w>-
+map <C-u> <C-w>+
+map <C-y> <C-w>-
 map <C-p> <C-w>=
 
 " remap for list, normal, insert and command line mode
