@@ -22,3 +22,6 @@
 [submodule "disabled/markdown"]
 	path = disabled/markdown
 	url = git://github.com/tpope/vim-markdown.git
+[submodule "bundle/plasticboy-markdown"]
+	path = bundle/plasticboy-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
