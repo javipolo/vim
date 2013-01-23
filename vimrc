@@ -31,12 +31,15 @@ map <C-u> <C-w>+
 map <C-y> <C-w>-
 map <C-p> <C-w>=
 
-" remap for list, normal, insert and command line mode
-nnoremap <F10> :set list!<CR>
-inoremap <F10> <C-o>::set list!<CR>
-cnoremap <F10> <C-c>::set list!<CR>
+" Show line numbers by default
+set number
+" remap for toggling paste mode (list, number and paste), normal, insert and command line mode
+nnoremap <F12> :set list!<CR>:set number!<CR>:set paste!<CR>
+inoremap <F12> <C-o>::set list!<CR>:set number!<CR>:set paste!<CR>
+cnoremap <F12> <C-c>::set list!<CR>:set number!<CR>:set paste!<CR>
 
-set pastetoggle=<F12>
+" We do pastetoggle with the previous section
+"set pastetoggle=<F12>
 
 " Returns true if paste mode is enabled
 function! HasPaste()
