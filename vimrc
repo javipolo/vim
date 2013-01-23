@@ -1,6 +1,13 @@
 " enable pathogen (autoloading of bundles)
 call pathogen#infect()
 
+" Enable 256 colors! :)
+set t_Co=256
+" This is for ansii escapechars ... not needed in xfce4-terminal at least
+"set t_AB=^[[48;5;%dm
+"set t_AF=^[[38;5;%dm
+colorscheme colorful256
+
 if has("syntax")
   syntax on
 endif
