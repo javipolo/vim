@@ -27,4 +27,4 @@
 	url = https://github.com/plasticboy/vim-markdown.git
 [submodule "bundle/colorschemes"]
 	path = bundle/colorschemes
-	url = git@github.com:flazz/vim-colorschemes.git
+	url = https://github.com/flazz/vim-colorschemes.git
