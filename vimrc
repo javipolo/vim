@@ -12,7 +12,7 @@ if has("autocmd")
 endif
 
 set list
-set listchars=tab:▸\ ,eol:$
+set listchars=tab:▸\ ,eol:¬
 
 set expandtab
 set tabstop=4
