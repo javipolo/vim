@@ -31,3 +31,6 @@
 [submodule "bundle/buf_it"]
 	path = bundle/buf_it
 	url = git://github.com/vim-scripts/buf_it.git
+[submodule "bundle/haproxy"]
+	path = bundle/haproxy
+	url = https://github.com/vim-scripts/haproxy
