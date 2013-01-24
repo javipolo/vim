@@ -6,7 +6,7 @@ set t_Co=256
 " This is for ansii escapechars ... not needed in xfce4-terminal at least
 "set t_AB=^[[48;5;%dm
 "set t_AF=^[[38;5;%dm
-colorscheme colorful256
+colorscheme colorful256_javi
 
 if has("syntax")
   syntax on
