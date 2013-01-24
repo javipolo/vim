@@ -1,7 +1,9 @@
-" Vim color file:  colorful256.vim
+" Vim color file:  javipolo.vim
 " Last Change: 03 Oct, 2007
 " License: public domain
-" Maintainer:: Jagpreet<jagpreetc AT gmail DOT com>
+" Maintainer:: Javi Polo <javipolo@drslump.org>
+"
+" Just changed few things from: colorful256.vim
 "
 " for a 256 color capable terminal
 " "{{{
@@ -26,7 +28,7 @@ if exists("syntax_on")
     syntax reset
 endif
 
-let g:colors_name = "colorful256"
+let g:colors_name = "javipolo"
 
  highlight Normal       cterm=none    ctermfg=249 ctermbg=16  gui=none    guifg=#b2b2b2 guibg=#000000
  highlight Special      cterm=none    ctermfg=105 ctermbg=16  gui=none    guifg=#8787ff guibg=#000000
@@ -50,7 +52,8 @@ let g:colors_name = "colorful256"
  highlight Search       cterm=none    ctermfg=15  ctermbg=160 gui=none    guifg=#ffffff guibg=#df0000
  highlight Visual       cterm=none    ctermfg=16  ctermbg=50  gui=none    guifg=#000000 guibg=#00ffdf
  highlight Cursor       cterm=none    ctermfg=16  ctermbg=33  gui=none    guifg=#000000 guibg=#0087ff
- highlight StatusLine   cterm=reverse ctermfg=58  ctermbg=15  gui=reverse guifg=#5f5f00 guibg=#ffffff
+ " highlight StatusLine   cterm=reverse ctermfg=58  ctermbg=15  gui=reverse guifg=#5f5f00 guibg=#ffffff
+ highlight StatusLine   cterm=none    ctermfg=253  ctermbg=234  gui=reverse guifg=#5f5f00 guibg=#ffffff
  highlight Question     cterm=none    ctermfg=16  ctermbg=226 gui=none    guifg=#000000 guibg=#ffff00
  highlight Todo         cterm=none    ctermfg=160 ctermbg=184 gui=none    guifg=#df0000 guibg=#dfdf00
 " highlight Folded       cterm=none    ctermfg=15  ctermbg=58  gui=none    guifg=#ffffff guibg=#5f5f00
