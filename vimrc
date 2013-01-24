@@ -67,3 +67,6 @@ nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
 nmap <Leader>a) :Tabularize /=><CR>
 vmap <Leader>a) :Tabularize /=><CR>
+
+" Set filetype for haproxy.cfg
+au BufRead,BufNewFile haproxy.cfg set filetype=haproxy
