@@ -70,3 +70,5 @@ vmap <Leader>a) :Tabularize /=><CR>
 
 " Set filetype for haproxy.cfg
 au BufRead,BufNewFile haproxy.cfg set filetype=haproxy
+
+filetype plugin indent on
