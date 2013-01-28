@@ -72,3 +72,8 @@ vmap <Leader>a) :Tabularize /=><CR>
 au BufRead,BufNewFile haproxy.cfg set filetype=haproxy
 
 filetype plugin indent on
+
+" File to store local customizations
+if filereadable(glob("~/.vim/vimrc.local"))
+    source ~/.vim/vimrc.local
+endif
