@@ -76,8 +76,12 @@ au BufRead,BufNewFile haproxy.cfg set filetype=haproxy
 " enable indentation based on filetype by default
 filetype plugin indent on
 
-" Fold and unfold using space
-nnoremap <Space> za
+" Fold and unfold using leader-space
+nnoremap <Leader><Space> za
+
+" Manage .vimrc easily
+nnoremap <Leader>ev :vsplit $MYVIMRC<cr>
+nnoremap <Leader>sv :source $MYVIMRC<cr>
 
 " File to store local customizations
 if filereadable(glob("~/.vim/vimrc.local"))
