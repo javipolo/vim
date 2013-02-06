@@ -35,11 +35,16 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-map <C-o> <C-w><
-map <C-i> <C-w>>
-map <C-u> <C-w>+
-map <C-y> <C-w>-
-map <C-p> <C-w>=
+" Removed the following mappings because they overlap ... beter enabling mouse
+" map <C-o> <C-w><
+" map <C-i> <C-w>>
+" map <C-u> <C-w>+
+" map <C-y> <C-w>-
+" map <C-p> <C-w>=
+
+" Enable mouse even within screen
+set ttymouse=xterm2
+set mouse=a
 
 " Show line numbers by default
 set number
