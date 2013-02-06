@@ -73,7 +73,11 @@ vmap <Leader>a) :Tabularize /=><CR>
 " Set filetype for haproxy.cfg
 au BufRead,BufNewFile haproxy.cfg set filetype=haproxy
 
+" enable indentation based on filetype by default
 filetype plugin indent on
+
+" Fold and unfold using space
+nnoremap <Space> za
 
 " File to store local customizations
 if filereadable(glob("~/.vim/vimrc.local"))
