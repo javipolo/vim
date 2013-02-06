@@ -85,8 +85,8 @@ filetype plugin indent on
 nnoremap <Leader><Space> za
 
 " Manage .vimrc easily
-nnoremap <Leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <Leader>sv :source $MYVIMRC<cr>
+nnoremap <Leader>ve :vsplit $MYVIMRC<cr>
+nnoremap <Leader>vs :source $MYVIMRC<cr>
 
 " File to store local customizations
 if filereadable(glob("~/.vim/vimrc.local"))
