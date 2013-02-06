@@ -33,7 +33,7 @@
 	url = git://github.com/vim-scripts/buf_it.git
 [submodule "bundle/haproxy"]
 	path = bundle/haproxy
-	url = https://github.com/javipolo/haproxy
+	url = https://github.com/javipolo/vim-haproxy
 [submodule "bundle/tlib_vim"]
 	path = bundle/tlib_vim
 	url = https://github.com/tomtom/tlib_vim.git
