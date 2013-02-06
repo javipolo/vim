@@ -44,9 +44,9 @@ map <C-p> <C-w>=
 " Show line numbers by default
 set number
 " remap for toggling paste mode (list, number and paste), normal, insert and command line mode
-nnoremap <F12> :set list!<CR>:set number!<CR>:set paste!<CR>
-inoremap <F12> <C-o>::set list!<CR>:set number!<CR>:set paste!<CR>
-cnoremap <F12> <C-c>::set list!<CR>:set number!<CR>:set paste!<CR>
+nnoremap <F12> :set list! number! paste!<CR>
+inoremap <F12> <C-o>::set list! number! paste!<CR>
+cnoremap <F12> <C-c>::set list! number! paste!<CR>
 
 " We do pastetoggle with the previous section
 "set pastetoggle=<F12>
