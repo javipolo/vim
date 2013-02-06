@@ -18,6 +18,9 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+" My custom leader key
+let mapleader='ç'
+
 set list
 set listchars=tab:▸\ ,eol:¬
 
@@ -62,7 +65,6 @@ set laststatus=2
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ %{fugitive#statusline()}\ Line:\ %l
 
 " keymappings for tabularize
-let mapleader=','
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
 nmap <Leader>a) :Tabularize /=><CR>
