@@ -21,9 +21,11 @@ endif
 " My custom leader key
 let mapleader='ç'
 
+" show hidden characters for tab and end of line
 set list
 set listchars=tab:▸\ ,eol:¬
 
+" spacing options
 set expandtab
 set tabstop=4
 set softtabstop=4
@@ -80,6 +82,9 @@ au BufRead,BufNewFile haproxy.cfg set filetype=haproxy
 
 " enable indentation based on filetype by default
 filetype plugin indent on
+
+" Only autoclose folds below this folding level
+set foldlevel=20
 
 " Fold and unfold using leader-space
 nnoremap <Leader><Space> za
