@@ -49,3 +49,6 @@
 [submodule "bundle/vim-varnish"]
 	path = bundle/vim-varnish
 	url = git://github.com/javipolo/vim-varnish.git
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = git://github.com/scrooloose/nerdcommenter.git
