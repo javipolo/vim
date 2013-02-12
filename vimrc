@@ -95,6 +95,7 @@ nnoremap <Leader>vs :source $MYVIMRC<cr>
 
 " Abbreviations
 iabbrev !sh! #!/bin/bash
+iabbrev !SH! #!/bin/bash
 
 " File to store local customizations
 if filereadable(glob("~/.vim/vimrc.local"))
