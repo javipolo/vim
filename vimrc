@@ -93,6 +93,9 @@ nnoremap <Leader><Space> za
 nnoremap <Leader>ve :vsplit $MYVIMRC<cr>
 nnoremap <Leader>vs :source $MYVIMRC<cr>
 
+" Abbreviations
+iabbrev !sh! #!/bin/bash
+
 " File to store local customizations
 if filereadable(glob("~/.vim/vimrc.local"))
     source ~/.vim/vimrc.local
