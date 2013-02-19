@@ -18,6 +18,8 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+set hidden
+
 " My custom leader key
 let mapleader='ç'
 
@@ -45,8 +47,8 @@ map <C-l> <C-w>l
 " map <C-p> <C-w>=
 
 " Enable mouse even within screen
-set ttymouse=xterm2
-set mouse=a
+"set ttymouse=xterm2
+"set mouse=a
 
 " Show line numbers by default
 set number
@@ -78,7 +80,7 @@ nmap <Leader>a) :Tabularize /=><CR>
 vmap <Leader>a) :Tabularize /=><CR>
 
 " Set filetype for haproxy.cfg
-au BufRead,BufNewFile haproxy.cfg set filetype=haproxy
+autocmd BufRead,BufNewFile haproxy.cfg set filetype=haproxy
 
 " enable indentation based on filetype by default
 filetype plugin indent on
