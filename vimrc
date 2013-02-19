@@ -80,8 +80,10 @@ nmap <Leader>a) :Tabularize /=><CR>
 vmap <Leader>a) :Tabularize /=><CR>
 
 " Set filetype for haproxy.cfg
-autocmd BufRead,BufNewFile haproxy.cfg set filetype=haproxy
-
+augroup javi
+    autocmd!
+    autocmd BufRead,BufNewFile haproxy.cfg set filetype=haproxy
+augroup END
 " enable indentation based on filetype by default
 filetype plugin indent on
 
