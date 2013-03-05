@@ -55,3 +55,6 @@
 [submodule "bundle/vim-autochmod"]
 	path = bundle/vim-autochmod
 	url = git://github.com/javipolo/vim-autochmod.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
