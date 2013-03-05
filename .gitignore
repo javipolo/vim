@@ -3,3 +3,4 @@
 .netrwhist
 bundle/test/*
 vimrc.local
+.gitmodules_disabled
