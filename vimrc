@@ -80,12 +80,17 @@ nmap <Leader>a) :Tabularize /=><CR>
 vmap <Leader>a) :Tabularize /=><CR>
 
 " Set filetype for haproxy.cfg
-augroup javi
+augroup haproxy
     autocmd!
     autocmd BufRead,BufNewFile haproxy.cfg set filetype=haproxy
 augroup END
 " enable indentation based on filetype by default
 filetype plugin indent on
+
+augroup shellscripts
+    autocmd!
+    autocmd BufNewFile *.sh norm ggO#!/bin/bash
+augroup END
 
 " Only autoclose folds below this folding level
 set foldlevel=20
