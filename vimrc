@@ -92,6 +92,11 @@ augroup shellscripts
     autocmd BufNewFile *.sh norm ggO#!/bin/bash
 augroup END
 
+" Set filetype for glusterfs
+augroup glusterfs
+    autocmd!
+    autocmd BufRead,BufNewFile *.vol set filetype=glusterfs
+augroup END
 " Only autoclose folds below this folding level
 set foldlevel=20
 
