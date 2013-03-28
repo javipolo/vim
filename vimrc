@@ -107,6 +107,8 @@ nnoremap <Leader><Space> za
 nnoremap <Leader>ve :vsplit $MYVIMRC<cr>
 nnoremap <Leader>vs :source $MYVIMRC<cr>
 
+" Strip spaces in current line
+nnoremap <Leader>ss 0v^hy0:.s/^\s\+//g<CR>:.s/\s\+/ /g<CR>:.s/\s$//g<cr>0P
 " Abbreviations
 iabbrev !sh! #!/bin/bash
 iabbrev !SH! #!/bin/bash
