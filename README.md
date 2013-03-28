@@ -7,7 +7,7 @@ OR
 
 * git clone git://github.com/javipolo/vim.git ~/.vim && ln -s ~/.vim/vimrc ~/.vimrc && cd ~/.vim && git submodule update -i
 
-## Submodules:
+## Plugins:
 * **comentary**:       use \\\\\\ for commenting out code
 * **fugitive**:        integrate vim with git
 * **golden-ratio**:    resize windows applying golden ratio
@@ -21,3 +21,5 @@ OR
 * **unimpaired**:      easy navigation through quickfix list, among other things
 * **vim-autochmod**:   set permissions of shellscripts automatically
 * **vim-varnish**:     varnish syntax and folding rules
+
+Note: most of the plugins are git submodules pulled out from github. See .gitmodules to get to the repos :)
