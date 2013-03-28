@@ -2,7 +2,9 @@
 
 ## Quick setup:
 * git clone --recursive git://github.com/javipolo/vim.git ~/.vim && ln -s .vim/vimrc ~/.vimrc
+
 OR
+
 * git clone git://github.com/javipolo/vim.git ~/.vim && ln -s .vim/vimrc ~/.vimrc && cd .vim && git submodule update -i
 
 ## Submodules:
