@@ -1,13 +1,14 @@
 # javipolo's .vim && .vimrc
 
 ## Quick setup:
-* git clone --recursive git://github.com/javipolo/vim.git ~/.vim && ln -s ~/.vim/vimrc ~/.vimrc
+* git clone --recursive git://github.com/javipolo/vim.git ~/.vim && ln -s ~/.vim/vimrc ~/.vimrc && vim +BundleInstall +qall
 
 OR
 
-* git clone git://github.com/javipolo/vim.git ~/.vim && ln -s ~/.vim/vimrc ~/.vimrc && cd ~/.vim && git submodule update -i
+* git clone git://github.com/javipolo/vim.git ~/.vim && ln -s ~/.vim/vimrc ~/.vimrc && cd ~/.vim && git submodule update -i && vim +BundleInstall +qall
 
 ## Plugins:
+* **vundle**:          Plugin manager, this manages all other plugins in file load\_vundle.vim
 * **comentary**:       use \\\\\\ for commenting out code
 * **fugitive**:        integrate vim with git
 * **golden-ratio**:    resize windows applying golden ratio
