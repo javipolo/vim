@@ -35,3 +35,5 @@ Bundle 'javipolo/vim-autochmod'
 Bundle 'scrooloose/nerdtree'
 " resize windows applying golden ratio
 Bundle 'roman/golden-ratio'
+" CtrlP to jump faster through files
+Bundle 'kien/ctrlp.vim'
