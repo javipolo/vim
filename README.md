@@ -22,5 +22,7 @@ OR
 * **unimpaired**:      easy navigation through quickfix list, among other things
 * **vim-autochmod**:   set permissions of shellscripts automatically
 * **vim-varnish**:     varnish syntax and folding rules
+* **CtrlP**:           faster browsing through files
+* **utilsnips**:       Fast insertion of text snippets
 
 Note: most of the plugins are git submodules pulled out from github. See .gitmodules to get to the repos :)

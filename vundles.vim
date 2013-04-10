@@ -37,3 +37,4 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'roman/golden-ratio'
 " CtrlP to jump faster through files
 Bundle 'kien/ctrlp.vim'
+" utilsnips, for inserting snippets of code
