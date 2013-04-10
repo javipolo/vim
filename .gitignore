@@ -1,5 +1,6 @@
 *.swo
 *.swp
 .netrwhist
-bundle/*/*
+bundle/*
+!bundle/vundle
 vimrc.local
