@@ -19,33 +19,9 @@
 [submodule "bundle/unimpaired"]
 	path = bundle/unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
-[submodule "disabled/markdown"]
-	path = disabled/markdown
-	url = git://github.com/tpope/vim-markdown.git
-[submodule "bundle/plasticboy-markdown"]
-	path = bundle/plasticboy-markdown
-	url = https://github.com/plasticboy/vim-markdown.git
-[submodule "bundle/colorschemes"]
-	path = bundle/colorschemes
-	url = https://github.com/flazz/vim-colorschemes.git
-[submodule "bundle/buf_it"]
-	path = bundle/buf_it
-	url = git://github.com/vim-scripts/buf_it.git
 [submodule "bundle/haproxy"]
 	path = bundle/haproxy
 	url = https://github.com/javipolo/vim-haproxy
-[submodule "bundle/tlib_vim"]
-	path = bundle/tlib_vim
-	url = https://github.com/tomtom/tlib_vim.git
-[submodule "bundle/vim-addon-mw-utils"]
-	path = bundle/vim-addon-mw-utils
-	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "bundle/snipmate-snippets"]
-	path = bundle/snipmate-snippets
-	url = https://github.com/honza/snipmate-snippets
-[submodule "bundle/vim-snipmate"]
-	path = bundle/vim-snipmate
-	url = git://github.com/javipolo/vim-snipmate.git
 [submodule "bundle/vim-varnish"]
 	path = bundle/vim-varnish
 	url = git://github.com/javipolo/vim-varnish.git
