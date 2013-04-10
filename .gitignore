@@ -1,6 +1,5 @@
 *.swo
 *.swp
 .netrwhist
-bundle/test/*
+bundle/*/*
 vimrc.local
-.gitmodules_disabled

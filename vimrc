@@ -1,5 +1,5 @@
-" enable pathogen (autoloading of bundles)
-call pathogen#infect()
+" load vundle
+source load_vundle.vim
 
 " Enable 256 colors! :)
 set t_Co=256
