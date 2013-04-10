@@ -1,5 +1,5 @@
 " load vundle
-source ~/.vim/load_vundle.vim
+source ~/.vim/vundles.vim
 
 " Enable 256 colors! :)
 set t_Co=256
