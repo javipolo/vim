@@ -38,4 +38,4 @@ Bundle 'roman/golden-ratio'
 " CtrlP to jump faster through files
 Bundle 'kien/ctrlp.vim'
 " utilsnips, for inserting snippets of code
-Bundle 'SirVer/ultisnips'
+Bundle 'javipolo/ultisnips'
