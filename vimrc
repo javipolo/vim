@@ -60,6 +60,9 @@ cnoremap <F12> <C-c>::set list! number! paste!<CR>
 " We do pastetoggle with the previous section
 "set pastetoggle=<F12>
 
+" Map ultisnippets C-tab to C-^
+let g:UltiSnipsListSnippets = "<C-^>"
+
 " Returns true if paste mode is enabled
 function! HasPaste()
     if &paste
