@@ -17,8 +17,6 @@ Bundle 'godlygeek/tabular'
 Bundle 'tpope/vim-fugitive'
 " manage brackets, tags, quotes and everything that surrounds text
 Bundle 'tpope/vim-surround'
-" use \\\\\\ for commenting out code
-Bundle 'tpope/vim-commentary'
 " enables to use . in lots of places
 Bundle 'tpope/vim-repeat'
 " easy navigation through quickfix list, among other things
@@ -27,7 +25,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'javipolo/vim-haproxy'
 " varnish syntax and folding rules
 Bundle 'javipolo/vim-varnish'
-" use \<Leader\>cc for commenting out code
+" use gcc for commenting out code
 Bundle 'scrooloose/nerdcommenter'
 " set permissions of shellscripts automatically
 Bundle 'javipolo/vim-autochmod'
