@@ -8,7 +8,7 @@ OR
 * git clone git://github.com/javipolo/vim.git ~/.vim && ln -s ~/.vim/vimrc ~/.vimrc && cd ~/.vim && git submodule update -i && vim +BundleInstall +qall
 
 ## Plugins:
-* **vundle**:          Plugin manager, this manages all other plugins in file load\_vundle.vim
+* **vundle**:          Plugin manager, this manages all other plugins in file vundles.vim
 * **comentary**:       use \\\\\\ for commenting out code
 * **fugitive**:        integrate vim with git
 * **golden-ratio**:    resize windows applying golden ratio
