@@ -1,0 +1,9 @@
+snippet f "Puppet file description"
+file { '${1:FILENAME}':
+    mode    => '${3:755}',
+    owner   => '${2:root}',
+    group   => '$2',
+    ensure  => present,
+    source  => '${3:puppet:///modules/}',
+}
+endsnippet
