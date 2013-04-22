@@ -40,8 +40,8 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" Open new split panes to right and bottom, which feels more natural than " Vim’s default:
-set splitbelow
+" Uncomment to Open new split panes to right and bottom
+"set splitbelow
 set splitright
 
 " Removed the following mappings because they overlap ... beter enabling mouse
