@@ -7,3 +7,12 @@ file { '${1:FILENAME}':
     source  => '${3:puppet:///modules/}',
 }
 endsnippet
+
+snippet nfs "NFS mounts"
+mount { '${1:/mnt/nfs/}':
+    device  => '${2:nas:/mnt/nas/}',
+    fstype  => 'nfs',
+    ensure  => 'mounted',
+    options => 'auto,noatime,hard,intr,tcp,rsize=32768,wsize=32768,ac,acregmin=30',
+}
+endsnippet
