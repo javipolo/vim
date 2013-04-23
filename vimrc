@@ -44,14 +44,7 @@ map <C-l> <C-w>l
 "set splitbelow
 set splitright
 
-" Removed the following mappings because they overlap ... beter enabling mouse
-" map <C-o> <C-w><
-" map <C-i> <C-w>>
-" map <C-u> <C-w>+
-" map <C-y> <C-w>-
-" map <C-p> <C-w>=
-
-" Enable mouse even within screen
+" Enable mouse even within screen. Disabled because it fucks up with X cut and paste
 "set ttymouse=xterm2
 "set mouse=a
 
@@ -59,14 +52,14 @@ set splitright
 set number
 " remap for toggling paste mode (list, number and paste), normal, insert and command line mode
 nnoremap <F12> :set list! number! paste!<CR>
-inoremap <F12> <C-o>::set list! number! paste!<CR>
-cnoremap <F12> <C-c>::set list! number! paste!<CR>
-
-" We do pastetoggle with the previous section
-"set pastetoggle=<F12>
 
 " Map ultisnippets C-tab to C-^
 let g:UltiSnipsListSnippets = "<C-^>"
+
+" My custom pastetoggle
+function! CustomPasteToggle()
+    set list! paste! number!
+endfunc
 
 " Returns true if paste mode is enabled
 function! HasPaste()
