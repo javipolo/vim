@@ -77,8 +77,8 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ %{fugitive#statusline()}\ Line:\ %
 " keymappings for tabularize
 nmap <Leader>a= :Tabularize /=<CR>
 vmap <Leader>a= :Tabularize /=<CR>
-nmap <Leader>a) :Tabularize /=><CR>
-vmap <Leader>a) :Tabularize /=><CR>
+nmap <leader>a0 :Tabularize /=><CR>
+vmap <leader>a0 :Tabularize /=><CR>
 
 " Set filetype for haproxy.cfg
 augroup haproxy
