@@ -10,7 +10,8 @@ Bundle 'gmarik/vundle'
 
 " My Bundles here:
 " syntax and more for .pp files
-Bundle 'rodjek/vim-puppet'
+"Bundle 'rodjek/vim-puppet'
+Bundle 'netdata/vim-puppet'
 " automagically tabulate in columns
 Bundle 'godlygeek/tabular'
 " integrate vim with git
