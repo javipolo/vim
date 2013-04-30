@@ -123,7 +123,7 @@ nmap -a [a
 nmap +a ]a
 nmap -A [A
 nmap +A ]A
-nmap -b [b
+nmap ¡b [b
 nmap +b ]b
 nmap -B [B
 nmap +B ]B
