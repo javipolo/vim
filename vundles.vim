@@ -27,7 +27,7 @@ Bundle 'javipolo/vim-haproxy'
 " varnish syntax and folding rules
 Bundle 'javipolo/vim-varnish'
 " use gcc for commenting out code
-Bundle 'scrooloose/nerdcommenter'
+"Bundle 'scrooloose/nerdcommenter'
 " set permissions of shellscripts automatically
 Bundle 'javipolo/vim-autochmod'
 " nice file explorer
@@ -38,3 +38,7 @@ Bundle 'roman/golden-ratio'
 Bundle 'kien/ctrlp.vim'
 " utilsnips, for inserting snippets of code
 Bundle 'SirVer/ultisnips'
+" Visual vertical line for indentation
+"Bundle 'Yggdroot/indentLine'
+" Commenting out code
+Bundle 'tomtom/tcomment_vim'

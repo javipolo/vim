@@ -55,6 +55,10 @@ set splitright
 set number
 " remap for toggling paste mode (list, number and paste), normal, insert and command line mode
 nnoremap <F12> :set list! number! paste!<CR>
+inoremap <F12> <C-O>:set list! number! paste!<CR>
+
+" paste to clipboard
+nnoremap <Leader>p gg"+yG<C-o>
 
 " Map ultisnippets C-tab to C-^
 let g:UltiSnipsListSnippets = "<C-^>"
