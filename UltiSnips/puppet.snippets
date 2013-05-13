@@ -34,6 +34,34 @@ funciones::mkdirp { '$1':
   mode  => '${3:775}',
 }
 endsnippet
+
+
+snippet confd "Create conf.d resource for generating configs from chunks of configs" b
+  exec { 'rebuild_${1:progname}':
+    command     => 'cat /etc/$1/conf.d/* > /etc/${2:configfile}',
+    path        => [ '/bin' , '/usr/bin' ],
+    refreshonly => true,
+    notify      => Service['$1'],
+  }
+
+  enalquiler::$1::conf { 'base': precedence => '01' }
+
+# REMEMBER TO MOVE THIS DEFINE OUTSIDE OF THE CLASS
+define enalquiler::$1::conf ( $precedence = '10' ) {
+
+  file { "/etc/$1/conf.d/${precedence}-${name}":
+    mode    => '755',
+    owner   => 'root',
+    group   => 'root',
+    ensure  => present,
+    content => template("enalquiler/$1/${name}.conf.erb"),
+    require => File['/etc/$1/conf.d'],
+    notify  => Exec['rebuild_$1'],
+  }
+
+}
+endsnippet
+
 # Default Snippets for Puppet
 
 snippet /^class/ "Class declaration" r
