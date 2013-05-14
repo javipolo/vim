@@ -42,3 +42,5 @@ Bundle 'SirVer/ultisnips'
 "Bundle 'Yggdroot/indentLine'
 " Commenting out code
 Bundle 'tomtom/tcomment_vim'
+" Buffer explorer
+Bundle 'fholgado/minibufexpl.vim'

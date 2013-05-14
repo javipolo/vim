@@ -156,6 +156,9 @@ nnoremap ¡t :tabnext<CR>
 iabbrev !sh! #!/bin/bash
 iabbrev !SH! #!/bin/bash
 
+" Toggle MiniBufExplorer
+map <silent> <Leader>b :TMiniBufExplorer<cr>
+
 " File to store local customizations
 if filereadable(glob("~/.vim/vimrc.local"))
     source ~/.vim/vimrc.local
