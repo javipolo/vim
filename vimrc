@@ -123,30 +123,34 @@ nnoremap <Leader>ss 0v^hy0:.s/^\s\+//g<CR>:.s/\s\+/ /g<CR>:.s/\s$//g<cr>0P
 
 " Unimpaired with better spanish keyboard support ;)
 
-nmap -a [a
+nmap ¡a [a
 nmap +a ]a
-nmap -A [A
+nmap ¡A [A
 nmap +A ]A
 nmap ¡b [b
 nmap +b ]b
-nmap -B [B
+nmap ¡B [B
 nmap +B ]B
-nmap -l [l
+nmap ¡l [l
 nmap +l ]l
-nmap -L [L
+nmap ¡L [L
 nmap +L ]L
-nmap -<C-L> [<C-L>
+nmap ¡<C-L> [<C-L>
 nmap +<C-L> ]<C-L>
-nmap -q [q
+nmap ¡q [q
 nmap +q ]q
-nmap -Q [Q
+nmap ¡Q [Q
 nmap +Q ]Q
-nmap -<C-Q> [<C-Q>
+nmap ¡<C-Q> [<C-Q>
 nmap +<C-Q> ]<C-Q>
-nmap -t [t
-nmap +t ]t
-nmap -T [T
+" nmap ¡t [t
+" nmap +t ]t
+nmap ¡T [T
 nmap +T ]T
+
+" Move through tabs
+nnoremap +t :tabnext<CR>
+nnoremap ¡t :tabnext<CR>
 
 " Abbreviations
 iabbrev !sh! #!/bin/bash
