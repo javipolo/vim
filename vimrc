@@ -152,6 +152,11 @@ nmap +T ]T
 nnoremap +t :tabnext<CR>
 nnoremap ¡t :tabnext<CR>
 
+" git status
+nnoremap <Leader>gs :Gstatus<cr>
+" git diff
+nnoremap <Leader>gd :Gdiff<cr>
+
 " Abbreviations
 iabbrev !sh! #!/bin/bash
 iabbrev !SH! #!/bin/bash
