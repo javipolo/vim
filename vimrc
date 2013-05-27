@@ -79,7 +79,7 @@ endfunction
 " Always show the status line
 set laststatus=2
 " statusline (with git support from Fugitive.vim)
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ %{fugitive#statusline()}\ Line:\ %l
+" set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ %{fugitive#statusline()}\ Line:\ %l
 
 " keymappings for tabularize
 nmap <Leader>a= :Tabularize /=<CR>
