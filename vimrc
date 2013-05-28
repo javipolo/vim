@@ -170,6 +170,9 @@ let g:miniBufExplorerMoreThanOne=10
 vnoremap < <gv
 vnoremap > >gv
 
+" Force Saving Files that Require Root Permission
+cmap w!! %!sudo tee > /dev/null %
+
 " File to store local customizations
 if filereadable(glob("~/.vim/vimrc.local"))
     source ~/.vim/vimrc.local
