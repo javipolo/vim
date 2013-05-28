@@ -173,6 +173,9 @@ vnoremap > >gv
 " Force Saving Files that Require Root Permission
 cmap w!! %!sudo tee > /dev/null %
 
+" Automatically reload vimrc when it's saved
+au BufWritePost .vimrc so ~/.vimrc
+
 " File to store local customizations
 if filereadable(glob("~/.vim/vimrc.local"))
     source ~/.vim/vimrc.local
