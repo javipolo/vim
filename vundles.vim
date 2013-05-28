@@ -44,3 +44,5 @@ Bundle 'SirVer/ultisnips'
 Bundle 'tomtom/tcomment_vim'
 " Buffer explorer
 Bundle 'fholgado/minibufexpl.vim'
+" Neat statusline
+Bundle 'maciakl/vim-neatstatus'
