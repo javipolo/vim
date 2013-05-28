@@ -25,7 +25,8 @@ let mapleader='ç'
 
 " show hidden characters for tab and end of line
 set list
-set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
+set showbreak=↪
 
 " spacing options
 set expandtab
