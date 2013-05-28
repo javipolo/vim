@@ -174,6 +174,12 @@ vnoremap > >gv
 " Force Saving Files that Require Root Permission
 cmap w!! %!sudo tee > /dev/null %
 
+" Better comand-line editing
+cnoremap <C-j> <t_kd>
+cnoremap <C-k> <t_ku>
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+ 
 " Automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
 
