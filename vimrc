@@ -180,6 +180,9 @@ cnoremap <C-k> <t_ku>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
  
+" Open last/alternate buffer
+noremap <Leader><Leader> <C-^>
+
 " Automatically reload vimrc when it's saved
 au BufWritePost .vimrc so ~/.vimrc
 
