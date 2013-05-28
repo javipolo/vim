@@ -166,6 +166,10 @@ map <silent> <Leader>b :TMiniBufExplorer<cr>
 " Only open automatically if more than 10 files are open
 let g:miniBufExplorerMoreThanOne=10
 
+" Reselect visual block after indent/outdent
+vnoremap < <gv
+vnoremap > >gv
+
 " File to store local customizations
 if filereadable(glob("~/.vim/vimrc.local"))
     source ~/.vim/vimrc.local
