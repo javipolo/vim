@@ -29,11 +29,11 @@ Bundle 'javipolo/vim-varnish'
 " use gcc for commenting out code
 "Bundle 'scrooloose/nerdcommenter'
 " set permissions of shellscripts automatically
-Bundle 'javipolo/vim-autochmod'
+"Bundle 'javipolo/vim-autochmod'
 " nice file explorer
 Bundle 'scrooloose/nerdtree'
 " resize windows applying golden ratio
-Bundle 'roman/golden-ratio'
+"Bundle 'roman/golden-ratio'
 " CtrlP to jump faster through files
 Bundle 'kien/ctrlp.vim'
 " utilsnips, for inserting snippets of code
@@ -43,6 +43,8 @@ Bundle 'SirVer/ultisnips'
 " Commenting out code
 Bundle 'tomtom/tcomment_vim'
 " Buffer explorer
-Bundle 'fholgado/minibufexpl.vim'
+"Bundle 'fholgado/minibufexpl.vim'
 " Neat statusline
 Bundle 'maciakl/vim-neatstatus'
+" Rainbow parenthesis plugin
+Bundle 'amdt/vim-niji'
