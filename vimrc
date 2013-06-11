@@ -1,6 +1,9 @@
 " load vundle
 source ~/.vim/vundles.vim
 
+" Disable nasty splash screen
+set shortmess+=I
+
 " Enable 256 colors! :)
 set t_Co=256
 " This is for ansii escapechars ... not needed in xfce4-terminal at least
