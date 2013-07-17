@@ -48,3 +48,5 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'maciakl/vim-neatstatus'
 " Rainbow parenthesis plugin
 Bundle 'amdt/vim-niji'
+" ArgDo for directories
+Bundle "vim-scripts/DirDo.vim"
