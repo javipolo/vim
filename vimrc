@@ -23,6 +23,7 @@ endif
 
 set hidden
 
+set hlsearch
 " My custom leader key
 let mapleader='ç'
 
