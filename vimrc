@@ -184,6 +184,8 @@ cnoremap <C-k> <t_ku>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
  
+nnoremap n nzz
+
 " Open last/alternate buffer
 noremap <Leader><Leader> <C-^>
 
