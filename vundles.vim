@@ -50,3 +50,6 @@ Bundle 'maciakl/vim-neatstatus'
 Bundle 'amdt/vim-niji'
 " ArgDo for directories
 Bundle 'vim-scripts/DirDo.vim'
+" new text object q for matching any quotes
+Bundle 'kana/vim-textobj-user'
+Bundle 'beloglazov/vim-textobj-quotes'
