@@ -24,6 +24,8 @@ endif
 set hidden
 
 set hlsearch
+map <Leader>h :noh<CR>
+
 " My custom leader key
 let mapleader='ç'
 
