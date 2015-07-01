@@ -37,7 +37,8 @@ Bundle 'scrooloose/nerdtree'
 " CtrlP to jump faster through files
 Bundle 'kien/ctrlp.vim'
 " utilsnips, for inserting snippets of code
-Bundle 'SirVer/ultisnips'
+" disabled for compatibility in all servers
+"Bundle 'SirVer/ultisnips'
 " Visual vertical line for indentation
 "Bundle 'Yggdroot/indentLine'
 " Commenting out code
