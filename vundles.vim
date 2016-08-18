@@ -2,7 +2,7 @@ set nocompatible               " be iMproved
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
@@ -54,3 +54,5 @@ Bundle 'vim-scripts/DirDo.vim'
 " new text object q for matching any quotes
 Bundle 'kana/vim-textobj-user'
 Bundle 'beloglazov/vim-textobj-quotes'
+
+call vundle#end()
