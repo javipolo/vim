@@ -58,4 +58,7 @@ Bundle 'beloglazov/vim-textobj-quotes'
 " Syntax checker
 Bundle 'scrooloose/syntastic'
 
+" tmux autocomplete
+Bundle 'wellle/tmux-complete.vim'
+
 call vundle#end()
