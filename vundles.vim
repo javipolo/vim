@@ -55,4 +55,7 @@ Bundle 'vim-scripts/DirDo.vim'
 Bundle 'kana/vim-textobj-user'
 Bundle 'beloglazov/vim-textobj-quotes'
 
+" Syntax checker
+Bundle 'scrooloose/syntastic'
+
 call vundle#end()
