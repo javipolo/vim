@@ -198,11 +198,14 @@ au BufWritePost .vimrc so ~/.vimrc
 if filereadable(glob("~/.vim/vimrc.local"))
     source ~/.vim/vimrc.local
 endif
-"
+
 " switch to previous buffer
 nmap <C-Tab> :b#<cr>
 nmap <C-m> :bn<cr>
 nmap <C-n> :bp<cr>
+
+" disable mouse
+set mouse=
 
 " Syntastic
 set statusline+=%#warningmsg#
@@ -214,3 +217,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" puppet-lint arguments
+let g:syntastic_puppet_puppetlint_args = "--no-80chars-check --no-arrow_alignment-check --no-documentation-check"
