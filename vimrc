@@ -200,14 +200,16 @@ nmap <C-n> :bp<cr>
 set mouse=
 
 " Syntastic
-nnoremap <silent> <Leader>ç :SyntasticCheck<CR>
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
+" Move through location list
+nmap <Leader>n :lnext<cr>zz
+nmap <Leader>p :lprevious<cr>zz
 
 " puppet-lint arguments
 let g:syntastic_puppet_puppetlint_args = "--no-80chars-check --no-arrow_alignment-check --no-documentation-check"
@@ -217,3 +219,8 @@ let g:fugitive_blame_arguments = '-w'
 " Disable pipe character on window splitting separator
 set fillchars=""
 "source /home/javipolo/.vim/colors/javipolo.vim
+
+set diffopt+=vertical
+
+" enable all Python syntax highlighting features
+let python_highlight_all = 1
