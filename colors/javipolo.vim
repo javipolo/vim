@@ -65,7 +65,9 @@ let g:colors_name = "javipolo"
  highlight SignColumn   cterm=none    ctermfg=16  ctermbg=28  gui=none    guifg=#000000 guibg=#008700
  highlight DiffText     cterm=none    ctermfg=16  ctermbg=34  gui=none    guifg=#000000 guibg=#00af00
  highlight StatusLineNC cterm=reverse ctermfg=131 ctermbg=15  gui=reverse guifg=#af5f5f guibg=#ffffff
- highlight VertSplit    cterm=reverse ctermfg=172 ctermbg=15  gui=reverse guifg=#df8700 guibg=#ffffff
+ "highlight VertSplit    cterm=reverse ctermfg=172 ctermbg=15  gui=reverse guifg=#df8700 guibg=#ffffff
+ highlight VertSplit    cterm=reverse ctermfg=10 ctermbg=15  gui=reverse guifg=#df8700 guibg=#ffffff
+ highlight MatchParen   cterm=bold    ctermfg=green  ctermbg=blue  gui=bold    guifg=#00ff00 guibg=#0000ff
  highlight User1        cterm=none    ctermbg=20  ctermfg=15  gui=none    guibg=#0000df guifg=#ffffff
  highlight User2        cterm=none    ctermbg=20  ctermfg=46  gui=none    guibg=#0000df guifg=#00ff00
  highlight User3        cterm=none    ctermbg=20  ctermfg=46  gui=none    guibg=#0000df guifg=#00ff00
