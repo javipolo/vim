@@ -165,15 +165,6 @@ nnoremap <Leader>gs :Gstatus<cr>
 " git diff
 nnoremap <Leader>gd :Gdiff<cr>
 
-" Abbreviations
-iabbrev !sh! #!/bin/bash
-iabbrev !SH! #!/bin/bash
-
-" Toggle MiniBufExplorer
-map <silent> <Leader>b :TMiniBufExplorer<cr>
-" Only open automatically if more than 10 files are open
-let g:miniBufExplorerMoreThanOne=10
-
 " Reselect visual block after indent/outdent
 vnoremap < <gv
 vnoremap > >gv
