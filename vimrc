@@ -27,7 +27,8 @@ set hlsearch
 map <Leader>h :noh<CR>
 
 " My custom leader key
-let mapleader='ç'
+" let mapleader='ç'
+let mapleader=' '
 
 " show hidden characters for tab and end of line
 set list
