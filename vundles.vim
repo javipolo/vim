@@ -45,4 +45,7 @@ Bundle 'scrooloose/syntastic'
 " toggle location and quick lists
 Bundle 'milkypostman/vim-togglelist'
 
+" Insert eyaml from within vim
+Bundle 'javipolo/vim-eyaml'
+
 call vundle#end()
