@@ -48,4 +48,6 @@ Bundle 'milkypostman/vim-togglelist'
 " Insert eyaml from within vim
 Bundle 'javipolo/vim-eyaml'
 
+" Nice vertical line to match indentation
+Bundle 'Yggdroot/indentLine'
 call vundle#end()

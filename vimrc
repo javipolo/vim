@@ -224,3 +224,6 @@ set diffopt+=vertical
 
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
+
+" Vertical indentation character
+let g:indentLine_char = '┆'
