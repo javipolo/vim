@@ -226,3 +226,6 @@ set diffopt+=vertical
 let python_highlight_all = 1
 
 nnoremap <silent> <Leader>R :w<cr>:!clear;python %<cr>
+
+" Vertical indentation character
+let g:indentLine_char = '┆'
