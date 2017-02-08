@@ -224,3 +224,5 @@ set diffopt+=vertical
 
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
+
+nnoremap <silent> <Leader>R :w<cr>:!clear;python %<cr>
