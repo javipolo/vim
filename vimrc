@@ -227,6 +227,12 @@ let python_highlight_all = 1
 
 nnoremap <silent> <Leader>R :w<cr>:!clear;python %<cr>
 
+" Clear spaces
+vnoremap <Leader>cs :s/ //g<cr>/poiasdpoiqwepoasd<cr>
+
+" Clear search
+nnoremap <Leader>ss /poqieasopdipoeiwq<cr>
+
 " Vertical indentation character
 let g:indentLine_char = '┆'
 
