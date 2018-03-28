@@ -33,7 +33,7 @@ Bundle 'kien/ctrlp.vim'
 "Bundle 'SirVer/ultisnips'
 
 " Neat statusline
-Bundle 'maciakl/vim-neatstatus'
+" Bundle 'maciakl/vim-neatstatus'
 
 " new text object q for matching any quotes
 Bundle 'kana/vim-textobj-user'
@@ -50,4 +50,7 @@ Bundle 'javipolo/vim-eyaml'
 
 " Nice vertical line to match indentation
 Bundle 'Yggdroot/indentLine'
+
+" Configure status line
+Plugin 'itchyny/lightline.vim'
 call vundle#end()

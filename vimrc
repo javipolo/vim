@@ -229,3 +229,18 @@ nnoremap <silent> <Leader>R :w<cr>:!clear;python %<cr>
 
 " Vertical indentation character
 let g:indentLine_char = '┆'
+
+let g:lightline = {
+  \ 'colorscheme': 'seoul256',
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste' ],
+  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+  \ },
+  \ 'component_function': {
+  \   'gitbranch': 'fugitive#head'
+  \ },
+  \ }
+" delete current file and buffer
+"nmap <Leader>Dd :call delete(expand('%')) | bdelete!
+"
+"au FileType terraform setlocal sw=2 sts=2 et
