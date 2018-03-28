@@ -207,6 +207,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
+let g:syntastic_yaml_checkers = ['yamllint']
+
 " Move through location list
 nmap <Leader>n :lnext<cr>zz
 nmap <Leader>p :lprevious<cr>zz
