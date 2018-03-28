@@ -53,4 +53,7 @@ Bundle 'Yggdroot/indentLine'
 
 " Configure status line
 Plugin 'itchyny/lightline.vim'
+
+" Terraform integration
+Plugin 'hashivim/vim-terraform'
 call vundle#end()
