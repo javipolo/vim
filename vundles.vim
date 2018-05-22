@@ -21,6 +21,8 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 " easy navigation through quickfix list, among other things
 Bundle 'tpope/vim-unimpaired'
+" comment out stuff
+Bundle 'tpope/vim-commentary'
 " syntax highlighting and folding for haproxy.cfg
 Bundle 'javipolo/vim-haproxy'
 " varnish syntax and folding rules
