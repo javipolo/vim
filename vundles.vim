@@ -58,4 +58,7 @@ Plugin 'itchyny/lightline.vim'
 
 " Terraform integration
 Plugin 'hashivim/vim-terraform'
+
+" Mustache
+Plugin 'mustache/vim-mustache-handlebars'
 call vundle#end()
