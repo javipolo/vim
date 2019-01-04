@@ -65,8 +65,6 @@ Plugin 'mustache/vim-mustache-handlebars'
 " Jenkinsfile/Groovy
 Plugin 'martinda/jenkinsfile-vim-syntax'
 
-Plugin 'javipolo/vim-base64'
-
 Plugin 'fatih/vim-go'
 
 call vundle#end()
