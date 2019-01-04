@@ -61,5 +61,9 @@ Plugin 'hashivim/vim-terraform'
 
 " Mustache
 Plugin 'mustache/vim-mustache-handlebars'
+
+" Jenkinsfile/Groovy
+Plugin 'martinda/jenkinsfile-vim-syntax'
+
 Plugin 'javipolo/vim-base64'
 call vundle#end()
