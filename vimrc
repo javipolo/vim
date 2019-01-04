@@ -260,3 +260,4 @@ let g:lightline = {
 "nmap <Leader>Dd :call delete(expand('%')) | bdelete!
 "
 "au FileType terraform setlocal sw=2 sts=2 et
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2
