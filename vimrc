@@ -224,6 +224,14 @@ set fillchars=""
 
 set diffopt+=vertical
 
+" diffput/get one line
+nnoremap <silent> <leader>dp V:diffput<cr>
+nnoremap <silent> <leader>dg V:diffget<cr>
+" diff toggle
+nnoremap <silent> <leader>df :call DiffToggle()<CR>
+" undo in the other window
+nmap <silent> <leader>du :wincmd w<cr>:normal u<cr>:wincmd w<cr>
+
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
 
