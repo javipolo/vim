@@ -61,4 +61,5 @@ Plugin 'hashivim/vim-terraform'
 
 " Mustache
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'javipolo/vim-base64'
 call vundle#end()
