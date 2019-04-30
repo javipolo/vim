@@ -48,6 +48,10 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Faster window maximize and minimize
+nnoremap <Leader>M <C-w>\| <C-w>_
+nnoremap <Leader>m <C-w>=
+
 " remap [ and ] to + and - for faster motion in spanish keyboad
 nnoremap + ]
 nnoremap - [
@@ -261,3 +265,45 @@ let g:lightline = {
 "
 "au FileType terraform setlocal sw=2 sts=2 et
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2
+
+
+autocmd FileType go set listchars+=tab:\ \ 
+
+" Make vim-go and ale happy
+" from https://vi.stackexchange.com/questions/14166/quickfix-window-and-location-list-open-at-the-same-time-causes-weird-resize
+" No gofmt on save. We use ALE.
+let g:go_fmt_autosave = 0
+
+augroup my_go_settings
+    autocmd!
+
+    " Because I use ALE these commands are useless to me.
+    autocmd FileType go
+                \  delc GoErrCheck | delc GoLint | delc GoVet
+                \| delc GoFmt | delc GoImports | delc GoFmtAutoSaveToggle
+                \| delc GoMetaLinter
+augroup end
+
+" Format code for me on :w
+let g:ale_fix_on_save = 1
+
+" goimports on save.
+let g:ale_fixers = {'go': ['goimports']}
+
+" Linters
+let g:ale_linters = {'go': ['gometalinter']}
+let g:ale_go_gometalinter_options = '--disable-all'
+            \ . ' --enable=vet'
+            \ . ' --enable=golint'
+            \ . ' --enable=errcheck'
+            \ . ' --enable=ineffassign'
+            \ . ' --enable=goconst'
+            \ . ' --enable=goimports'
+            \ . ' --enable=lll --line-length=120'
+            " These are slow (>2s)
+            " \ . ' --enable=varcheck'
+            " \ . ' --enable=interfacer'
+            " \ . ' --enable=unconvert'
+            " \ . ' --enable=structcheck'
+            " \ . ' --enable=megacheck'
+
