@@ -62,10 +62,10 @@ let g:colors_name = "javipolo"
  highlight WildMenu     cterm=none    ctermfg=16  ctermbg=226 gui=none    guifg=#000000 guibg=#ffff00
  highlight FoldColumn   cterm=none    ctermfg=15  ctermbg=58  gui=none    guifg=#ffffff guibg=#5f5f00
  highlight SignColumn   cterm=none    ctermfg=16  ctermbg=28  gui=none    guifg=#000000 guibg=#008700
- highlight DiffDelete   cterm=none    ctermfg=207 ctermbg=16  gui=none    guifg=#ff5fff guibg=#000000
- highlight DiffText     cterm=none    ctermfg=16  ctermbg=77  gui=none    guifg=#000000 guibg=#00af00
- highlight DiffAdd      cterm=none    ctermfg=16  ctermbg=44  gui=none    guifg=#000000 guibg=#00af00
- highlight DiffChange   cterm=none    ctermfg=16  ctermbg=185 gui=none    guifg=#000000 guibg=#00af00
+ highlight DiffDelete   cterm=none    ctermfg=1 ctermbg=16  gui=none    guifg=#ff2222 guibg=#000000
+ highlight DiffText     cterm=none    ctermfg=249  ctermbg=77  gui=none    guifg=#ff5fff guibg=#00af00
+ highlight DiffAdd      cterm=none    ctermfg=2  ctermbg=44  gui=none    guifg=#009900 guibg=#00af00
+ highlight DiffChange   cterm=none    ctermfg=3  ctermbg=185 gui=none    guifg=#bbbb00 guibg=#00af00
  highlight StatusLineNC cterm=reverse ctermfg=131 ctermbg=15  gui=reverse guifg=#af5f5f guibg=#ffffff
  "highlight VertSplit    cterm=reverse ctermfg=172 ctermbg=15  gui=reverse guifg=#df8700 guibg=#ffffff
  highlight VertSplit    cterm=reverse ctermfg=10 ctermbg=15  gui=reverse guifg=#df8700 guibg=#ffffff
