@@ -32,7 +32,7 @@ let mapleader=' '
 
 " show hidden characters for tab and end of line
 set list
-"set listchars=tab:▸\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
+set listchars=tab:▸\ ,trail:←,extends:❯,precedes:❮
 "set showbreak=↪
 
 " spacing options
