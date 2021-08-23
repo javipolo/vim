@@ -42,7 +42,8 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'beloglazov/vim-textobj-quotes'
 
 " Cool syntax checker
-Bundle 'scrooloose/syntastic'
+" Bundle 'scrooloose/syntastic'
+Plugin 'w0rp/ale'
 
 " toggle location and quick lists
 Bundle 'milkypostman/vim-togglelist'
@@ -66,6 +67,11 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'martinda/jenkinsfile-vim-syntax'
 
 Plugin 'fatih/vim-go'
-Plugin 'w0rp/ale'
+
+" Move by indentation level
+Plugin 'jeetsukumaran/vim-indentwise'
+
+" Neovim treesiter
+Plugin 'nvim-treesitter/nvim-treesitter'
 
 call vundle#end()

@@ -94,3 +94,21 @@ if exists('loaded_taglist')
    highlight TagListComment  cterm=none ctermfg=16  ctermbg=28 gui=none guifg=#000000 guibg=#008700
    highlight TagListFileName cterm=none ctermfg=15  ctermbg=90 gui=none guifg=#ffffff guibg=#870087
 endif
+
+" highlight  ColorColumn   cterm=none  ctermfg=green  ctermbg=green
+" highlight  Conceal       cterm=none  ctermfg=green  ctermbg=green
+" highlight  CursorColumn  cterm=none  ctermfg=green  ctermbg=green
+" highlight  CursorIM      cterm=none  ctermfg=green  ctermbg=green
+" highlight  CursorLine    cterm=none  ctermfg=green  ctermbg=green
+" highlight  IncSearch     cterm=none  ctermfg=green  ctermbg=green
+" highlight  PmenuSbar     cterm=none  ctermfg=green  ctermbg=green
+" highlight  PmenuThumb    cterm=none  ctermfg=green  ctermbg=green
+ highlight  SpellBad      cterm=none  ctermfg=yellow  ctermbg=red
+" highlight  SpellBad      cterm=none  ctermfg=green  ctermbg=green
+" highlight  SpellCap      cterm=none  ctermfg=green  ctermbg=green
+" highlight  SpellLocal    cterm=none  ctermfg=green  ctermbg=green
+" highlight  SpellRare     cterm=none  ctermfg=green  ctermbg=green
+" highlight  TabLine       cterm=none  ctermfg=green  ctermbg=green
+" highlight  TabLineFill   cterm=none  ctermfg=green  ctermbg=green
+" highlight  TabLineSel    cterm=none  ctermfg=green  ctermbg=green
+

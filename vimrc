@@ -55,6 +55,11 @@ nnoremap <Leader>m <C-w>=
 " remap [ and ] to + and - for faster motion in spanish keyboad
 nnoremap + ]
 nnoremap - [
+
+" IndentWise motions
+map <Leader>' <Plug>(IndentWisePreviousEqualIndent)
+map <Leader>¡ <Plug>(IndentWiseNextEqualIndent)
+
 " Uncomment to Open new split panes to right and bottom
 "set splitbelow
 set splitright
