@@ -1,0 +1,1 @@
+/home/javipolo/.vim/init.vim

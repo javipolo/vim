@@ -7,6 +7,11 @@ OR
 
 * git clone git://github.com/javipolo/vim.git ~/.vim && ln -s ~/.vim/vimrc ~/.vimrc && cd ~/.vim && git submodule update -i && vim +BundleInstall +qall
 
+
+## NeoVim
+
+* ln -s ~/.vim/nvim ~/.config/nvim
+
 ## Plugins (if list is outdated, just loot at vundle.vim file):
 * **vundle**:          Plugin manager, this manages all other plugins in file vundles.vim
 * **comentary**:       use \\\\\\ for commenting out code
