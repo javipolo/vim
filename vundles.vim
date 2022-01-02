@@ -74,4 +74,7 @@ Plugin 'jeetsukumaran/vim-indentwise'
 " Neovim treesiter
 Plugin 'nvim-treesitter/nvim-treesitter'
 
+" Solidity
+Plugin 'TovarishFin/vim-solidity'
+
 call vundle#end()
