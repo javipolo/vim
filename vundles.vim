@@ -64,4 +64,7 @@ Plugin 'nvim-treesitter/nvim-treesitter'
 " Solidity
 Plugin 'TovarishFin/vim-solidity'
 
+" Glow Markdown Viewer
+Plugin 'ellisonleao/glow.nvim'
+
 call vundle#end()

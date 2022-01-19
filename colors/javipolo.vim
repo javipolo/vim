@@ -78,8 +78,10 @@ let g:colors_name = "javipolo"
 
 " for groups introduced in version 7
 if v:version >= 700
-   highlight Pmenu       cterm=none ctermfg=16 ctermbg=165 gui=none guifg=#000000 guibg=#df00ff
-   highlight PmenuSel    cterm=none ctermfg=16 ctermbg=220 gui=none guifg=#000000 guibg=#ffdf00
+   highlight PMenuSbar guifg=NONE guibg=#000000 guisp=#000000 gui=NONE ctermfg=white ctermbg=NONE cterm=NONE
+   highlight PMenuSel guifg=#000000 guibg=#ffdf00 guisp=#ffdf00 gui=NONE ctermfg=white ctermbg=blue cterm=NONE
+   highlight PMenu guifg=#ffffff guibg=#282329 guisp=#282329 gui=NONE ctermfg=15 ctermbg=235 cterm=NONE
+   highlight PMenuThumb guifg=NONE guibg=#00ff87 guisp=#00ff87 gui=NONE ctermfg=white ctermbg=48 cterm=NONE
    highlight tablinesel  cterm=none ctermfg=15 ctermbg=58  gui=none guifg=#ffffff guibg=#5f5f00
    highlight tabline     cterm=none ctermfg=7  ctermbg=58  gui=none guifg=#c0c0c0 guibg=#5f5f00
    highlight tablinefill cterm=none ctermfg=58 ctermbg=58  gui=none guifg=#5f5f00 guibg=#5f5f00
@@ -101,8 +103,6 @@ endif
 " highlight  CursorIM      cterm=none  ctermfg=green  ctermbg=green
 " highlight  CursorLine    cterm=none  ctermfg=green  ctermbg=green
 " highlight  IncSearch     cterm=none  ctermfg=green  ctermbg=green
-" highlight  PmenuSbar     cterm=none  ctermfg=green  ctermbg=green
-" highlight  PmenuThumb    cterm=none  ctermfg=green  ctermbg=green
  highlight  SpellBad      cterm=none  ctermfg=yellow  ctermbg=red
 " highlight  SpellBad      cterm=none  ctermfg=green  ctermbg=green
 " highlight  SpellCap      cterm=none  ctermfg=green  ctermbg=green

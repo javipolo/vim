@@ -312,3 +312,6 @@ let g:ale_go_gometalinter_options = '--disable-all'
             " \ . ' --enable=structcheck'
             " \ . ' --enable=megacheck'
 
+
+" glow
+let g:glow_style = "dark"
