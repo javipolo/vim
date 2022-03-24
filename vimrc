@@ -315,3 +315,6 @@ let g:ale_go_gometalinter_options = '--disable-all'
 
 " glow
 let g:glow_style = "dark"
+
+" treat conf files as commented by #
+autocmd FileType conf setlocal commentstring=#\ %s
