@@ -52,21 +52,9 @@ map <C-l> <C-w>l
 nnoremap <Leader>M <C-w>\| <C-w>_
 nnoremap <Leader>m <C-w>=
 
-" remap [ and ] to + and - for faster motion in spanish keyboad
-nnoremap + ]
-nnoremap - [
-
-" IndentWise motions
-map <Leader>' <Plug>(IndentWisePreviousEqualIndent)
-map <Leader>¡ <Plug>(IndentWiseNextEqualIndent)
-
 " Uncomment to Open new split panes to right and bottom
 "set splitbelow
 set splitright
-
-" Enable mouse even within screen. Disabled because it fucks up with X cut and paste
-"set ttymouse=xterm2
-"set mouse=a
 
 " Show line numbers by default
 set number
@@ -77,102 +65,14 @@ inoremap <F12> <C-O>:set list! number! paste!<CR>
 " paste to clipboard
 nnoremap <Leader>p gg"+yG<C-o>
 
-" Map ultisnippets C-tab to C-^
-let g:UltiSnipsListSnippets = "<C-^>"
-
-" My custom pastetoggle
-function! CustomPasteToggle()
-    set list! paste! number!
-endfunc
-
-" Returns true if paste mode is enabled
-function! HasPaste()
-    if &paste
-        return 'PASTE MODE  '
-    en
-    return ''
-endfunction
-
 " Always show the status line
 set laststatus=2
-" statusline (with git support from Fugitive.vim)
-" set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ %{fugitive#statusline()}\ Line:\ %l
 
-" keymappings for tabularize
-nmap <Leader>a= :Tabularize /=<CR>
-vmap <Leader>a= :Tabularize /=<CR>
-nmap <leader>a0 :Tabularize /=><CR>
-vmap <leader>a0 :Tabularize /=><CR>
-
-" Set filetype for haproxy.cfg
-augroup haproxy
-    autocmd!
-    autocmd BufRead,BufNewFile haproxy.cfg set filetype=haproxy
-augroup END
 " enable indentation based on filetype by default
 filetype plugin indent on
 
-augroup shellscripts
-    autocmd!
-    autocmd BufNewFile *.sh norm ggO#!/bin/bash
-augroup END
-
-" Set filetype for glusterfs
-augroup glusterfs
-    autocmd!
-    autocmd BufRead,BufNewFile *.vol set filetype=glusterfs
-augroup END
 " Only autoclose folds below this folding level
 set foldlevel=20
-
-" Fold and unfold using leader-space
-nnoremap <Leader><Space> za
-
-" Manage .vimrc easily
-nnoremap <Leader>ve :vsplit $MYVIMRC<cr>
-nnoremap <Leader>vs :source $MYVIMRC<cr>
-
-" Easy opening of NerdTree
-nnoremap <Leader>N :NERDTree
-
-" Strip spaces in current line
-nnoremap <Leader>ss 0v^hy0:.s/^\s\+//g<CR>:.s/\s\+/ /g<CR>:.s/\s$//g<cr>0P
-
-" Unimpaired with better spanish keyboard support ;)
-
-nmap ¡a [a
-nmap +a ]a
-nmap ¡A [A
-nmap +A ]A
-nmap ¡b [b
-nmap +b ]b
-nmap ¡B [B
-nmap +B ]B
-nmap ¡l [l
-nmap +l ]l
-nmap ¡L [L
-nmap +L ]L
-nmap ¡<C-L> [<C-L>
-nmap +<C-L> ]<C-L>
-nmap ¡q [q
-nmap +q ]q
-nmap ¡Q [Q
-nmap +Q ]Q
-nmap ¡<C-Q> [<C-Q>
-nmap +<C-Q> ]<C-Q>
-" nmap ¡t [t
-" nmap +t ]t
-nmap ¡T [T
-nmap +T ]T
-
-" Move through tabs
-nnoremap +t :tabnext<CR>
-nnoremap ¡t :tabnext<CR>
-
-" git status
-nnoremap <Leader>gs :Gstatus<cr>
-" git diff
-nnoremap <Leader>gd :Gdiff<cr>
 
 " Reselect visual block after indent/outdent
 vnoremap < <gv
@@ -182,22 +82,14 @@ vnoremap > >gv
 cmap w!! %!sudo tee > /dev/null %
 
 " Better comand-line editing
-cnoremap <C-j> <t_kd>
-cnoremap <C-k> <t_ku>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
- 
+
 nnoremap n nzz
 
-" Open last/alternate buffer
-noremap <Leader><Leader> <C-^>
-
-" Automatically reload vimrc when it's saved
-au BufWritePost .vimrc so /home/javipolo/.vimrc
-
 " File to store local customizations
-if filereadable(glob("/home/javipolo/.vim/vimrc.local"))
-    source /home/javipolo/.vim/vimrc.local
+if filereadable(glob("$HOME/.vim/vimrc.local"))
+    source $HOME/.vim/vimrc.local
 endif
 
 " switch to previous buffer
@@ -222,29 +114,15 @@ let g:syntastic_yaml_checkers = ['yamllint']
 nmap <Leader>n :lnext<cr>zz
 nmap <Leader>p :lprevious<cr>zz
 
-" puppet-lint arguments
-let g:syntastic_puppet_puppetlint_args = "--no-80chars-check --no-arrow_alignment-check --no-documentation-check"
-
 let g:fugitive_blame_arguments = '-w'
 
 " Disable pipe character on window splitting separator
 set fillchars=""
-"source /home/javipolo/.vim/colors/javipolo.vim
 
 set diffopt+=vertical
 
-" diffput/get one line
-nnoremap <silent> <leader>dp V:diffput<cr>
-nnoremap <silent> <leader>dg V:diffget<cr>
-" diff toggle
-nnoremap <silent> <leader>df :call DiffToggle()<CR>
-" undo in the other window
-nmap <silent> <leader>du :wincmd w<cr>:normal u<cr>:wincmd w<cr>
-
 " enable all Python syntax highlighting features
 let python_highlight_all = 1
-
-nnoremap <silent> <Leader>R :w<cr>:!clear;python %<cr>
 
 " Clear spaces
 vnoremap <Leader>cs :s/ //g<cr>/poiasdpoiqwepoasd<cr>
@@ -265,13 +143,8 @@ let g:lightline = {
   \   'gitbranch': 'FugitiveHead'
   \ },
   \ }
-" delete current file and buffer
-"nmap <Leader>Dd :call delete(expand('%')) | bdelete!
-"
-"au FileType terraform setlocal sw=2 sts=2 et
+
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2
-
-
 autocmd FileType go set listchars+=tab:\ \ 
 
 " Make vim-go and ale happy
@@ -281,7 +154,6 @@ let g:go_fmt_autosave = 0
 
 augroup my_go_settings
     autocmd!
-
     " Because I use ALE these commands are useless to me.
     autocmd FileType go
                 \  delc GoErrCheck | delc GoLint | delc GoVet
@@ -312,12 +184,10 @@ let g:ale_go_gometalinter_options = '--disable-all'
             " \ . ' --enable=structcheck'
             " \ . ' --enable=megacheck'
 
-
 " glow
 let g:glow_style = "dark"
 
-" treat conf files as commented by #
-autocmd FileType conf setlocal commentstring=#\ %s
-
 " use # as default commentary
 set commentstring=#\ %s
+" use # to comment conf files
+autocmd FileType conf setlocal commentstring=#\ %s

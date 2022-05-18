@@ -26,12 +26,6 @@ Bundle 'tpope/vim-unimpaired'
 " comment out stuff
 Bundle 'tpope/vim-commentary'
 
-" syntax highlighting and folding for haproxy.cfg
-Bundle 'javipolo/vim-haproxy'
-
-" varnish syntax and folding rules
-Bundle 'javipolo/vim-varnish'
-
 " CtrlP to jump faster through files
 Bundle 'kien/ctrlp.vim'
 
@@ -55,14 +49,8 @@ Plugin 'hashivim/vim-terraform'
 " Golang support
 Plugin 'fatih/vim-go'
 
-" Move by indentation level
-Plugin 'jeetsukumaran/vim-indentwise'
-
 " Neovim treesiter
 Plugin 'nvim-treesitter/nvim-treesitter'
-
-" Solidity
-Plugin 'TovarishFin/vim-solidity'
 
 " Glow Markdown Viewer
 Plugin 'ellisonleao/glow.nvim'
