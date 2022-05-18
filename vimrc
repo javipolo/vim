@@ -318,3 +318,6 @@ let g:glow_style = "dark"
 
 " treat conf files as commented by #
 autocmd FileType conf setlocal commentstring=#\ %s
+
+" use # as default commentary
+set commentstring=#\ %s
