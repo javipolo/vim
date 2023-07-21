@@ -26,6 +26,9 @@ Bundle 'tpope/vim-unimpaired'
 " comment out stuff
 Bundle 'tpope/vim-commentary'
 
+" Manage sessions
+Plugin 'tpope/vim-obsession'
+
 " CtrlP to jump faster through files
 Bundle 'kien/ctrlp.vim'
 
@@ -49,10 +52,10 @@ Plugin 'hashivim/vim-terraform'
 " Golang support
 Plugin 'fatih/vim-go'
 
-" Neovim treesiter
-Plugin 'nvim-treesitter/nvim-treesitter'
-
 " Glow Markdown Viewer
 Plugin 'ellisonleao/glow.nvim'
+
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 
 call vundle#end()

@@ -37,9 +37,9 @@ set listchars=tab:▸\ ,trail:←,extends:❯,precedes:❮
 
 " spacing options
 set expandtab
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 
 " Faster scroll throug windows
 map <C-t> <C-w>w
@@ -165,10 +165,15 @@ augroup end
 let g:ale_fix_on_save = 1
 
 " goimports on save.
-let g:ale_fixers = {'go': ['goimports']}
+let g:ale_fixers = {}
+let g:ale_fixers.go = ['goimports']
+let g:ale_fixers.python = ['black']
 
 " Linters
 let g:ale_linters = {'go': ['gometalinter']}
+let g:ale_linters_ignore = {
+  \   'markdown': ['vale'],
+  \}
 let g:ale_go_gometalinter_options = '--disable-all'
             \ . ' --enable=vet'
             \ . ' --enable=golint'
@@ -183,6 +188,15 @@ let g:ale_go_gometalinter_options = '--disable-all'
             " \ . ' --enable=unconvert'
             " \ . ' --enable=structcheck'
             " \ . ' --enable=megacheck'
+let g:ale_python_flake8_options = '--max-line-length=160 --ignore=N806,E111,E114,W503'
+let g:ale_sh_shellcheck_options = '-e SC1090,SC2086,SC2063,SC2125'
+
+" Toggle linters
+nnoremap <F10> :ALEToggle<CR>
+inoremap <F10> <C-O>:ALEToggle<CR>
+nnoremap <Leader>l :ALEToggle<CR>
+inoremap <Leader>l <C-O>:ALEToggle<CR>
+
 
 " glow
 let g:glow_style = "dark"
@@ -191,3 +205,16 @@ let g:glow_style = "dark"
 set commentstring=#\ %s
 " use # to comment conf files
 autocmd FileType conf setlocal commentstring=#\ %s
+
+" Do not pop up help with F1
+map <F1> <Esc>
+imap <F1> <Esc>
+
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+
+" fzf search current word with Ag
+nmap <Leader>* :Ag <C-r><C-w><CR>
+
+" remove trailing spaces
+nmap <Leader>ts :%s/\s\+$//g<CR>
