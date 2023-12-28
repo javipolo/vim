@@ -145,6 +145,7 @@ let g:lightline = {
   \ }
 
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2
+autocmd FileType sh setlocal ts=4 sts=4 sw=4
 autocmd FileType go set listchars+=tab:\ \ 
 
 " Make vim-go and ale happy
@@ -190,6 +191,7 @@ let g:ale_go_gometalinter_options = '--disable-all'
             " \ . ' --enable=megacheck'
 let g:ale_python_flake8_options = '--max-line-length=160 --ignore=N806,E111,E114,W503'
 let g:ale_sh_shellcheck_options = '-e SC1090,SC2086,SC2063,SC2125'
+let g:ale_sh_bashate_options = '-i E006'
 
 " Toggle linters
 nnoremap <F10> :ALEToggle<CR>
