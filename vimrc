@@ -5,7 +5,7 @@ source ~/.vim/vundles.vim
 set shortmess+=I
 
 " Enable 256 colors! :)
-set t_Co=256
+" set t_Co=256
 " This is for ansii escapechars ... not needed in xfce4-terminal at least
 "set t_AB=^[[48;5;%dm
 "set t_AF=^[[38;5;%dm
@@ -26,9 +26,10 @@ set hidden
 set hlsearch
 map <Leader>h :noh<CR>
 
+set textwidth=130
 " My custom leader key
 " let mapleader='ç'
-let mapleader=' '
+let mapleader='\'
 
 " show hidden characters for tab and end of line
 set list

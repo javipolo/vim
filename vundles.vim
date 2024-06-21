@@ -58,4 +58,7 @@ Plugin 'ellisonleao/glow.nvim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 
+" NeoVim specific
+Plugin 'nvim-treesitter/nvim-treesitter'
+
 call vundle#end()
